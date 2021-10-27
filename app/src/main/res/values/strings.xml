@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GitRepos</string>
+    <string name="searchhint">Search Repositories</string>
+</resources>
