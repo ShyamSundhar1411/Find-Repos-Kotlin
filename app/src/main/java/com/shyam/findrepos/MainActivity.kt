@@ -17,5 +17,12 @@ class MainActivity : AppCompatActivity() {
             searchresultintent.putExtra("keyword",searchEditText.text.toString())
             startActivity(searchresultintent)
         }
+        val userRepoEditText = findViewById<EditText>(R.id.UserRepos)
+        val viewButton = findViewById<Button>(R.id.searchUserRepos)
+        viewButton.setOnClickListener {
+            var userRepoIntent = Intent(getApplicationContext(),SearchResultActivity::class.java)
+            userRepoIntent.putExtra("userName",userRepoEditText.text.toString())
+            startActivity(userRepoIntent)
+        }
     }
 }
